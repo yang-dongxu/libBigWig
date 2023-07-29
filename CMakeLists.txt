@@ -5,9 +5,9 @@ project(libBigWig LANGUAGES C)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-option(WITH_CURL "Enable CURL support" ON)
+option(WITH_CURL "Enable CURL support" OFF)
 option(WITH_ZLIBNG "Link to zlib-ng instead of zlib" OFF)
-option(BUILD_SHARED_LIBS "Build shared library" OFF)
+option(BUILD_SHARED_LIBS "Build shared library" ON)
 option(ENABLE_TESTING "Build tests" OFF)
 
 if(WITH_ZLIBNG)
